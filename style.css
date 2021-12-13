@@ -42,7 +42,50 @@ header .logo:hover {
     color: #BF433B;
 }
 
-header .main-nav a {
+.main-nav {
+    display: flex;
+}
+
+.main-nav li {
+    list-style-type: none;
+    position: relative;
+    width: 150px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #BFA6A2;
+    transition: all 0.4s;
+    letter-spacing: 2px;
+    margin-right: 5px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.main-nav a:hover {
+    background: #F3EED9;
+    color: #9f9f9f;
+    box-shadow: 3px 11px 25px -11px rgba(0,0,0,0.75);
+}
+
+.main-nav ul {
+    position: absolute;
+    display: none;
+}
+
+.main-nav li:hover > ul {
+    display: block;
+}
+
+.submenu li {
+    padding-top: 5px;
+}
+
+/* header .main-nav a {
     color: #BFA6A2;
     text-decoration: none;
     font-size: 20px;
@@ -65,7 +108,7 @@ header .main-nav a:hover {
     color: #9f9f9f;
     box-shadow: 3px 11px 25px -11px rgba(0,0,0,0.75);
 }
-
+*/
 .content {
     max-width: 650px;
     margin: 60px 100px;
@@ -161,6 +204,11 @@ label {
         display: none;
     }
 
+    .main-nav li:hover > ul {
+        display: none;
+    }
+
+
     label {
         display: block;
         font-size: 25px;
@@ -200,7 +248,7 @@ label {
     }
 
     #check:checked ~ .main-header .main-nav a:hover {
-        color: #F3EED9;
+        color: #9f9f9f;
     }
 
     #check:checked ~ .main-header label .menu-btn {

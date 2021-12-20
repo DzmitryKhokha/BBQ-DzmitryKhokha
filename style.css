@@ -9,9 +9,9 @@
 
 .content {
     max-width: 30rem;
-    margin: 4em 3em;
-    padding: 2em;
-    border-radius: 1em;
+    margin: 4rem 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
     color: #BFA6A2;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur( 4px );
@@ -20,24 +20,24 @@
 
 .content .info h2 {
     color: #F3EED9;
-    font-size: 3em;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 0.03em;
-    line-height: 1em;
-    margin-bottom: 0.5em;
+    letter-spacing: 0.03rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .content .info h2 span {
     color: #FFF5F1;
-    font-size: 0.5em;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .content .info p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: 500;
-    margin-bottom: 5em;
+    margin-bottom: 2rem;
 }
 
 .content .info-button {
@@ -49,9 +49,9 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    padding: 1em 2em;
-    border-radius: 0.2em;
+    letter-spacing: 0.1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.2rem;
     text-overflow: ellipsis;
     transition: 0.3s;
     transition-property: background;
@@ -65,7 +65,7 @@
 }
 
 .media-icons {
-    padding-top: 2em;
+    margin-top: 10rem;
     text-shadow: 4px 4px 7px rgba(0,0,0,0.6);
 }
 
@@ -88,8 +88,8 @@
 .media-icons a {
     position: relative;
     color: #F3EED9;
-    font-size: 1.5em;
-    padding-right: 1em;
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
     transform: translateY(0);
     will-change: transform;
     transition: transform 0.2s .15s ease;
@@ -99,20 +99,29 @@ a i:hover {
     transform: translateY(-0.15em);
 }
 
+label, #check {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+}
+
 @media (max-width: 960px) {
 
     .main-nav li {
-        width: 12em;
+        width: 12rem;
     }
 
     .main-nav a {
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 700;
-        height: 2em;
-        letter-spacing: 0.2em;
-        margin-right: 1em;
-        padding: 0.5em 2em;
-        border-radius: 0.8em;
+        text-align: center;
+        height: 2rem;
+        letter-spacing: 0.2rem;
+        margin-right: 1rem;
+        padding: 0.5rem 2rem;
+        border-radius: 0.8rem;
     }
 
     .main-header .main-nav {
@@ -123,12 +132,13 @@ a i:hover {
         display: none;
     }
 
-
     label {
         display: block;
-        font-size: 2em;
+        padding-right: 2rem;
+        font-size: 2rem;
         cursor: pointer;
-        transition: 0.3s;
+        transition: 0.8s;
+        color: #F3EED9;
     }
 
     label:hover {
@@ -143,8 +153,8 @@ a i:hover {
         z-index: 2;
         position: fixed;
         background: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
         top: 0;
         bottom: 0;
         left: 0;
@@ -158,8 +168,8 @@ a i:hover {
     #check:checked ~ .main-header .main-nav a {
         font-weight: 700;
         margin-right: 0;
-        margin-bottom: 3em;
-        letter-spacing: 0.2em;
+        margin-bottom: 3rem;
+        letter-spacing: 0.2rem;
         color: #BFA6A2;
     }
 
@@ -181,12 +191,13 @@ a i:hover {
         position: absolute;
     }
 
+
     .main-header .logo {
         position: absolute;
     }
 
     .content {
-        max-width: 40em;
+        max-width: 40rem;
     }
 
     .info {
@@ -194,19 +205,18 @@ a i:hover {
     }
 
     .content .info h2 {
-        font-size: 2.5em;
-        line-height: 0.8em;
+        font-size: 2.5rem;
+        line-height: 2rem;
         text-align: center;
     }
 
     .content .info h2 span {
-        font-size: 0.5em;
+        font-size: 1.5rem;
         font-weight: 600;
     }
 
     .content .info p {
-        font-size: 0.9em;
-        text-indent: 1em;
+        font-size: 0.9rem;
         text-shadow: #3b3b3b 1px 1px 6px;
         color: #F3EED9;
     }
@@ -214,33 +224,60 @@ a i:hover {
     .content .info-button {
         margin: auto;
         width: 80%;
-
         font-weight: 600;
     }
 
     .media-icons {
         margin: auto;
-        padding-top: 3em;
-        width: 10em;
+        padding-top: 3rem;
+        width: 10rem;
     }
 
     .media-icons a {
-        padding: 0 0.3em;
+        padding: 0 0.4rem;
     }
 }
 
 @media (max-width: 560px) {
+
+    .content {
+        max-width: 30rem;
+        margin: 2.5rem 1rem;
+        padding: 0.5rem;
+    }
+
     .content .info h2 {
-        font-size: 2em;
-        line-height: 1.1em;
+        font-size: 1.8rem;
+        line-height: 2rem;
     }
 
     .content .info h2 span {
-        font-size: 0.8em;
+        font-size: 1rem;
         font-weight: 600;
     }
 
     .content .info p {
-        font-size: 0.9em;
+        font-size: 0.8rem;
+        text-align: center;
     }
+
+    .content .info-button {
+        margin: auto;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .media-icons {
+        margin: auto;
+        padding-top: 3rem;
+        align-items: center;
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+
+    .media-icons a {
+        padding: 0 0.4rem;
+    }
+
 }

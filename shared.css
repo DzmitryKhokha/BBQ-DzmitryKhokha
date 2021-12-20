@@ -40,30 +40,30 @@
 .main-nav li {
     list-style-type: none;
     position: relative;
-    width: 7.5em;
+    width: 7rem;
 }
 
 .main-nav a {
     text-decoration: none;
     display: block;
     text-align: center;
-    font-size: 0.9em;
-    font-weight: 700;
-    height: 1.5em;
-    transition: all 0.4s;
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 1.4rem;
+    transition: 0.2s ease;
     letter-spacing: 0.1em;
-    margin-right: 0.8em;
+    margin-right: 0.2rem;
     padding: 5px 20px;
-    border-radius: 0.4em;
+    border-radius: 0.3rem;
     color: #BFA6A2;
 }
 
 .main-nav a:hover {
     background: rgba(243, 238, 217);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     color: #57423f;
-    box-shadow: 3px 11px 25px -11px rgba(0,0,0,0.75);
+    box-shadow: 3px 11px 25px -11px rgba(0, 0, 0, 0.75);
 }
 
 .main-nav ul {
@@ -76,15 +76,5 @@
 }
 
 .submenu li {
-    padding-top: 0.5em;
-}
-
-label {
-    display: none;
-    color: white;
-}
-
-#check {
-    z-index: 3;
-    display: none;
+    padding-top: 0.1rem;
 }

@@ -1,19 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Popins", sans-serif;
-}
+@import "../shared.css";
+@import "../parallax-meat.css";
 
 .wrapper {
-    position: relative;
+    background-image: linear-gradient(to bottom, #2e2423, #2b2221, #281f1e, #261d1c, #231b1a);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.section {
+    padding: 40px;
+    font-size: 1rem;
+    text-align: center;
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: url("../img/beef-chunks-with-ingredients-served-table.jpg") no-repeat;
-    background-size: cover;
+}
+
+.section-beef, .section-pork, .section-chicken {
+    color: #ddd;
+}
+
+.text-beef, .text-pork, .text-chicken {
+    display: inline-block;
+    padding: 1em;
+    margin-left: 40px;
+    width: 400px;
+    color: #BFA6A2;
+    font-size: 0.8em;
+    text-align: justify;
+    text-indent: 1.5em;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media (max-width: 960px) {
+
+    .main-nav li {
+        width: 12rem;
+    }
+
+    .main-nav a {
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        height: 2rem;
+        letter-spacing: 0.2rem;
+        margin-right: 1rem;
+        padding: 0.5rem 2rem;
+        border-radius: 0.8rem;
+    }
+
+    .main-header .main-nav {
+        display: none;
+    }
+
+    .main-nav li:hover > ul {
+        display: none;
+    }
+
+    .main-header .logo {
+        position: absolute;
+    }
+
+    .section {
+        padding: 20px;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .text-beef, .text-pork, .text-chicken {
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        width: 200px;
+        color: #BFA6A2;
+        font-size: 1em;
+        text-align: justify;
+        text-indent: 1em;
+        border-radius: 5px;
+        background-color: rgba(255,255,255,0.1);
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+    }
 }

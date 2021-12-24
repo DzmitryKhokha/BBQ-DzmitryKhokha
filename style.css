@@ -2,20 +2,30 @@
 @import "shared.css";
 
 .wrapper {
+    background-image: linear-gradient(to bottom, #2e2423, #2b2221, #281f1e, #261d1c, #231b1a);
+}
 
-    background: url("../BBQ-DzmitryKhokha/img/tomahawk.jpg") no-repeat;
+.background{
+    position: relative;
+    opacity: 0.8;
+    min-height: 700px;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image {
+    background-image: url("/img/tomahawk.jpg");
 }
 
 .content {
     max-width: 30rem;
-    margin: 4rem 3rem;
+    margin: 2rem 2rem;
     padding: 2rem;
     border-radius: 1rem;
     color: #BFA6A2;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+
 }
 
 .content .info h2 {
@@ -65,7 +75,8 @@
 }
 
 .media-icons {
-    margin-top: 10rem;
+    margin-top: 0.8em;
+    text-align: center;
     text-shadow: 4px 4px 7px rgba(0,0,0,0.6);
 }
 
@@ -88,7 +99,7 @@
 .media-icons a {
     position: relative;
     color: #F3EED9;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-right: 1.5rem;
     transform: translateY(0);
     will-change: transform;
@@ -197,7 +208,7 @@ label, #check {
     }
 
     .content {
-        max-width: 40rem;
+        max-width: 100%;
     }
 
     .info {

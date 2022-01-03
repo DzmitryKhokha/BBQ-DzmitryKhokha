@@ -1,0 +1,32 @@
+.parallax-fish {
+    position: relative;
+    opacity: 0.8;
+    min-height: 850px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.salmon {
+    background-image: url("/img/raw-fish-steaks-with-ingredients.jpg");
+}
+
+.dorado {
+    background-image: url("/img/dorado-fish-with-ingredients-dark.jpg");
+}
+
+.trout {
+    background-image: url("/img/fish-with-vegetables-cutlery-black-background.jpg");
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    color: #89726E;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+

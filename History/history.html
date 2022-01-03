@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>BBQ-history</title>
   <link rel="stylesheet" href="history-style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <meta name="viewport" content="width=device-width">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -13,7 +14,7 @@
       <div class="container">
         <div class="header__body">
           <a href="../index.html" class="header__logo">
-            <img src="../img/bull-logo.png" alt="">
+            <img src="../img/bull-logo.png" alt="BBQ" title="Main">
           </a>
           <div class="header__burger">
             <span></span>
@@ -43,14 +44,14 @@
         </div>
       </div>
     </header>
+    <section class="charcoal parallax">
+      <div class="text">
+        <span class="border">BBQ: history</span>
+      </div>
+    </section>
     <div class="content">
       <div class="container">
         <div class="content__text">
-          <section class="charcoal parallax">
-            <div class="text">
-              <span class="border">BBQ: history</span>
-            </div>
-          </section>
           <section class="history">
             <div class="history-container">
               <div class="history-text">
@@ -184,12 +185,10 @@
           </section>
         </div>
       </div>
-      <div class="scroll-up">
-        <i class="fa fa-chevron-up"></i>
-      </div>
     </div>
-    <script src="../jquery/jquery-3.6.0.slim.js"></script>
-    <script src="arrow-top.js"></script>
-    <script src="../burger-menu.js"></script>
+  </div>
+  <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+  <script src="../js/arrow-top.js"></script>
+  <script src="../js/burger-menu.js"></script>
 </body>
 </html>

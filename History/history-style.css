@@ -8,10 +8,6 @@
     -webkit-backdrop-filter: blur( 4px );
 }
 
-.container {
-    margin: 0 auto;
-}
-
 .content__text {
     font-size: 18px;
     line-height: 25px;
@@ -21,13 +17,9 @@
     margin: 0 0 20px 0;
 }
 
-.content {
-    padding: 100px 0 0 0;
-}
-
 .history {
     font-size: 1rem;
-    padding: 60px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -40,25 +32,6 @@
     max-width: 100%;
 }
 
-div .scroll-up {
-    position: fixed; /* фиксированная позиция */
-    color: #57423f; /* цвет текста */
-    background-color: #F3EED9FF; /* цвет заднего фона */
-    right: 20px; /* расстояние от правого края */
-    bottom: 0; /* расстояние от нижнего края */
-    padding: 4px 10px; /* отступы до содержимого блока */
-    font-size: 20px; /* размер шрифта (иконки) */
-    border-top-left-radius: 4px; /* скругление верхнего левого угла */
-    border-top-right-radius: 4px; /* скругление верхнего правого угла */
-    cursor: pointer; /* форма курсора */
-    display: none; /* не отображать элемент */
-    text-align: center; /*выравнивание содержимого элемента по центру */
-}
-
-div .scroll-up:hover {
-    background-color: #000; /* цвет заднего фона при наведении */
-}
-
 @media (max-width: 960px) {
     body .lock {
         overflow: hidden; /*блокирует прокрутку страницы при открытом
@@ -66,11 +39,11 @@ div .scroll-up:hover {
     }
 
     .header__body {
-        height: 50px;
+        height: 70px;
     }
 
     .header__logo {
-        flex: 0 0 40px;
+        flex: 0 0 50px;
     }
 
     .header__burger {
@@ -78,7 +51,7 @@ div .scroll-up:hover {
         position: relative;
         width: 30px;
         height: 20px;
-
+        margin-right: 1em;
         z-index: 3;
     }
 
@@ -139,22 +112,26 @@ div .scroll-up:hover {
 
     .header__list {
         display: block;
+        padding-top: 3em;
+        text-align: center;
     }
 
     .header__list li {
         margin: 0 0 20px 0;
     }
 
-    .content {
-        padding: 40px 0 0 0;
+    .history {
+        padding-top: 15px;
+        font-size: 0.9rem;
+        text-indent: 0.9rem;
     }
 }
 
 @media (max-width: 560px) {
     .history {
         padding: 10px;
-        text-align: justify;
-        text-indent: 1rem;
+        font-size: 0.8rem;
+        text-indent: 0.8rem;
     }
 
     .history-text {

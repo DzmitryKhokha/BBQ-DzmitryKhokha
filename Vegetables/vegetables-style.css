@@ -1,0 +1,85 @@
+@import "../shared.css";
+
+.wrapper {
+    background-image: url("../img/healthy-tasty-vegetables-grilled-pan.jpg");
+    font-size: 1rem;
+
+}
+
+.header:before {
+    background-color: rgba(39, 30, 29, 0.9);
+}
+
+.section {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.tomato, .pepper {
+    padding: 1em;
+    width: 60%;
+    color: #BFA6A2;
+    font-size: 0.8em;
+    text-align: justify;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+h2 {
+    padding: 10px 0;
+    color: #BF433B;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.tomato-ingredients-heading,
+.tomato-directions-heading,
+.pepper-ingredients-heading,
+.pepper-directions-heading{
+    color: rgba(254, 196, 0, 0.59);
+}
+
+.tomato-ingredients,
+.tomato-directions,
+.pepper-ingredients,
+.pepper-directions {
+    display: inline-block;
+    padding: 0 0 0.5em 0.5em;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #d3cfbd;
+}
+
+.tomato-ingredients-list,
+.tomato-directions-list,
+.pepper-ingredients-list,
+.pepper-directions-list{
+    display: inline;
+    padding: 1em;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.tomato-ingredients-list li,
+.tomato-directions-list li,
+.pepper-ingredients-list li,
+.pepper-directions-list li {
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    color: #c5b5b3;
+}

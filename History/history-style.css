@@ -46,6 +46,10 @@
         flex: 0 0 50px;
     }
 
+    .header__logo img {
+        margin-left: 0;
+    }
+
     .header__burger {
         display: block;
         position: relative;

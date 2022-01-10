@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 @import "../shared.css";
 @import "../parallax-meat.css";
 
@@ -6,6 +5,15 @@
     background-image: linear-gradient(to bottom, #2b2221, #281f1e, #261d1c, #231b1a);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
+
+}
+
+.header:before {
+    background-color: rgba(39, 30, 29, 0.9);
+}
+
+.header__body h4 {
+    z-index: 6;
 }
 
 .section {
@@ -80,7 +88,6 @@
     text-align: justify;
 }
 
-
 @media (max-width: 960px) {
     body .lock {
         overflow: hidden; /*блокирует прокрутку страницы при открытом
@@ -93,6 +100,10 @@
 
     .header__logo {
         flex: 0 0 50px;
+    }
+
+    .header__logo img {
+        margin-left: 0;
     }
 
     .header__burger {
@@ -224,6 +235,10 @@
 }
 
 @media (max-width: 560px) {
+    .section {
+        font-size: 0.9em;
+    }
+
     .parallax-meat {
         min-height: 400px;
     }

@@ -1,11 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 @import "../shared.css";
-@import "../parallax-fish.css";
 
 .wrapper {
     background-image: linear-gradient(to bottom, #2b2221, #281f1e, #261d1c, #231b1a);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
+}
+
+.header:before {
+    background-color: rgba(39, 30, 29, 0.9);
+}
+
+.fish {
+    min-height: 850px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.salmon {
+    background-image: url("/img/raw-fish-steaks-with-ingredients.jpg");
+}
+
+.dorado {
+    background-image: url("/img/dorado-fish-with-ingredients-dark.jpg");
+}
+
+.trout {
+    background-image: url("/img/fish-with-vegetables-cutlery-black-background.jpg");
 }
 
 .section {
@@ -43,8 +65,8 @@
     background: rgba(39, 30, 29, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.1px);
-    -webkit-backdrop-filter: blur(7.1px);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 }
 
 .text-trout {
@@ -103,6 +125,10 @@
 
     .header__logo {
         flex: 0 0 50px;
+    }
+
+    .header__logo img {
+        margin-left: 0;
     }
 
     .header__burger {
@@ -221,6 +247,10 @@
 }
 
 @media (max-width: 560px) {
+    .section {
+        font-size: 0.9rem;
+    }
+    
     .parallax-fish {
         min-height: 950px;
     }

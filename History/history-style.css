@@ -1,20 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 @import "../shared.css";
-@import "../parallax.css";
+@import "parallax-history.css";
 
 .wrapper {
-    background-image: linear-gradient(to bottom, #2e2423, #2b2221, #281f1e, #261d1c, #231b1a);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-}
-
-.content__text {
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.content__text p {
-    margin: 0 0 20px 0;
+    background-color: var(--wrapper-backgrpund-color);
 }
 
 .history {
@@ -23,18 +11,40 @@
     text-align: center;
 }
 
+.content__text {
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.content__text p {
+    margin: 0 0 20px 0;
+}
+
 .history-text {
     font-size: 1em;
+    font-weight: 300;
     text-align: justify;
     text-indent: 2em;
-    color: #F3EED9;
+    color: var(--button-text-color);
     padding: 60px 20px;
     max-width: 100%;
 }
 
+.text-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.text-item.animation-class {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
 @media (max-width: 960px) {
-    body .lock {
-        overflow: hidden; /*блокирует прокрутку страницы при открытом
+    body.lock {
+        overflow-y: hidden; /*блокирует прокрутку страницы при открытом
         бургер-меню*/
     }
 
@@ -62,7 +72,7 @@
     .header__burger:before,
     .header__burger:after {
         content: '';
-        background-color: #F3EED9;
+        background-color: var(--button-text-color);
         position: absolute;
         width: 100%;
         height: 3px;
@@ -72,7 +82,7 @@
 
     .header__burger span {
         position: absolute;
-        background-color: #F3EED9;
+        background-color: var(--button-text-color);
         left: 0;
         width: 100%;
         height: 3px;

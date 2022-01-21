@@ -10,6 +10,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1900 - 320)));
 }
 
 .header:before {
@@ -20,7 +21,8 @@ html {
     font-size: 1rem;
     width: clamp(600px, 40%, 500px);
     margin: 8rem 0 0 2rem;
-    padding: 2rem;
+    padding: calc(20px + (2rem - 20) * ((100vw - 320px) / (1900 - 320)));
+   /* padding: 2rem;*/
     color: var(--header__link-color);
     animation-duration: 4s;
     animation-timing-function: linear;

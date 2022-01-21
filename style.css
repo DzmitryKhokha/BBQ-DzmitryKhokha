@@ -41,14 +41,14 @@ html {
     }
 }
 
-.content__info h2 {
+.content__info h1 {
     color: var(--main-accent-color);
     font-size: 5em;
     font-weight: 900;
     line-height: 0.7em;
 }
 
-.content__info h2 span {
+.content__info h1 span {
     color: var(--main-headind-color);
     font-size: 0.4em;
     font-weight: 200;
